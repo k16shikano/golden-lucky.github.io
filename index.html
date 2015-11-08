@@ -24,7 +24,7 @@ html {
   background-color: #343434;
 }
 a {
-  color: #ffffff;
+  color: #f0efaf;
   text-decoration: none;
 }
 h1 {
@@ -59,6 +59,51 @@ h2 {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.whatsnew {
+  color: #ffffff;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  width: 90%;
+  padding-left: 10%;
+  padding-right: auto;
+  padding-top: 3%;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.whatsnew h2 {
+  color: #000000;
+  background-color: #f39900;
+  font-size: 1.2rem;
+  text-align: left;
+  text-indent: 0.5rem;
+  -webkit-border-top-left-radius: 0.5em;
+  -webkit-border-top-right-radius: 0.5em;
+  -webkit-border-bottom-right-radius: 0.5em;
+  -webkit-border-bottom-left-radius: 0.5em;
+  -moz-border-radius-topleft: 0.5em;
+  -moz-border-radius-topright: 0.5em;
+  -moz-border-radius-bottomright: 0.5em;
+  -moz-border-radius-bottomleft: 0.5em;
+}
+.whatsnew p:before {
+  display: inline-block;
+  width: 0rem;
+  margin-left: 9rem;
+  color: #f39900;
+  font-size: 1rem;
+  text-align: left;
+  content: "｜" attr(date);
+}
+.whatsnew p {
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 9rem;
+  text-indent: -9rem;
+}
+
 .copy {
   color: #ffffff;
   font-family: 'Noto Sans Japanese', sans-serif;
@@ -137,10 +182,30 @@ h2 {
     font-size: 0.8rem;
     overflow: auto;
     text-align: center;
-    padding-top: 10%;
     padding-left: auto;
     padding-right: auto;
     width: 90%;
+  }
+  .whatsnew h2 {
+    color: #000000;
+    background-color: #ff9900;
+    font-size: 1rem;
+    text-align: left;
+    }
+  .whatsnew p:before {
+    display: block;
+    width: 9rem;
+    margin-left: -2rem;
+    color: #ff9900;
+    font-size: 0.85rem;
+    text-align: left;
+    content: "｜" attr(date);
+  }
+  .whatsnew p {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 1rem;
+    text-indent: 1rem;
   }
   .copy {
     color: #ffffff;
@@ -182,8 +247,15 @@ h2 {
       </section>
       </div>
 
+
+      <div class="whatsnew">
+      <h2>お知らせ</h2>
+      <p date="2015年11月7日"><a href="http://texconf15.tumblr.com/">TeXユーザの集い2015</a>にて、「TeX原稿からEPUBを作りたい」と題した講演を行いました。（<a href="http://www.slideshare.net/k16shikano/texepub">発表資料</a>）
+      </p>
+      </div>
+
       <div class="footer">
-        お問い合わせ先：<br/>
+        <h4>お問い合わせ先：</h4>
         <a href="mailto:info@golden-lucky.net">info@golden-lucky.net</a><br/>
         <a href="https://twitter.com/golden_lucky">twitter: @golden_lucky</a><br/>
         担当：鹿野 桂一郎
